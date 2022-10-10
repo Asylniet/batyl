@@ -6,7 +6,8 @@
   --clr-primary-700: #fff1ff;
 
   // Header and footer, additional color to primary
-  // --clr-accent-700: #fff0fe;
+  --clr-accent-700: #4A52FF;
+  --clr-accent-700-shadow: #4a53ff70;
 
   // General background and ambient colors
   --clr-neutral-1000: #ffffff;
@@ -30,7 +31,7 @@
   --fs-700: 4rem; // 64px
   --fs-600: 3rem; // 48px
   --fs-550: 2.25rem; // 36px
-  --fs-500: 2rem; // 32px
+  --fs-500: clamp(18px, 2rem, 32px); // 32px
   --fs-400: clamp(18px, 1.875rem, 30px);
   --fs-300: clamp(18px, 1.5rem, 24px); // 24px
   --fs-100: 18px; // 1.125rem;

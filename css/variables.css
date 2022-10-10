@@ -2,6 +2,8 @@
 :root {
   --clr-primary-900: #ff5fd2;
   --clr-primary-700: #fff1ff;
+  --clr-accent-700: #4A52FF;
+  --clr-accent-700-shadow: #4a53ff70;
   --clr-neutral-1000: #ffffff;
   --clr-neutral-900: #f4f0f8;
   --clr-neutral-700: #d9d9d9;
@@ -17,7 +19,7 @@
   --fs-700: 4rem;
   --fs-600: 3rem;
   --fs-550: 2.25rem;
-  --fs-500: 2rem;
+  --fs-500: clamp(18px, 2rem, 32px);
   --fs-400: clamp(18px, 1.875rem, 30px);
   --fs-300: clamp(18px, 1.5rem, 24px);
   --fs-100: 18px;
