@@ -1,5 +1,11 @@
 window.addEventListener("load", () => {
-  AOS.init();
+  AOS.init({
+    easing: 'ease-in-out-cubic',
+    duration: 1000,
+    anchorPlacement: 'bottom-top'
+  });
+  var rellax = new Rellax('.rellax');
+
   const swiper = new Swiper(".swiper", {
     // Optional parameters
     direction: "horizontal",
@@ -7,6 +13,7 @@ window.addEventListener("load", () => {
     slidesPerView: 1,
     spaceBetween: 10,
     centeredSlides: true,
+    speed: 1000,
     breakpoints: {
       // when window width is >= 480px
       800: {

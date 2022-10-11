@@ -281,7 +281,7 @@ nav ul li a {
   position: relative;
   img {
     position: absolute;
-    top: -90px;
+    top: -200px;
     left: -70px;
     width: clamp(100px, 50vw, 540px);
     filter: blur(75px);
@@ -301,7 +301,7 @@ section.special {
 
 img#heart {
   position: absolute;
-  top: -60px;
+  top: -290px;
   left: 20px;
   z-index: -1;
   width: clamp(130px, 30vw, 280px);
@@ -369,7 +369,7 @@ img#heart {
   padding: 6.25rem 2.5rem;
   .bubble {
     position: absolute;
-    top: -70%;
+    top: -300%;
     right: 180px;
     width: clamp(100px, 30vw, 320px);
     z-index: -1;
@@ -399,7 +399,7 @@ section#team {
   padding: 6.25rem 2.5rem;
   .blob img {
     max-width: 331px;
-    top: -43px;
+    top: -870px;
     left: -40px;
     filter: blur(55px);
   }
@@ -423,7 +423,7 @@ section#feedback {
   .blob img {
     filter: blur(110px);
     width: clamp(100px, 20vw, 480px);
-    top: -96px;
+    top: -1130px;
     left: -98px;
   }
   .swiper {
@@ -532,6 +532,7 @@ section#contacts {
     max-width: 224px;
     filter: blur(150px);
     left: 10px;
+    top: -1492px;
   }
   p {
     margin-bottom: 45px;

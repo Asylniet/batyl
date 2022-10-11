@@ -18,10 +18,10 @@
         <div class="container flex spb ais main-container wrap">
           <nav>
             <ul>
-              <li data-aos="fade-up"><a href="#about">О проекте</a></li>
-              <li data-aos="fade-up" data-aos-delay="50"><a href="#team">Команда</a></li>
-              <li data-aos="fade-up" data-aos-delay="100"><a href="#feedback">Отзывы</a></li>
-              <li data-aos="fade-up" data-aos-delay="150"><a href="#contacts">Контакты</a></li>
+              <li data-aos="fade-right"><a href="#about">О проекте</a></li>
+              <li data-aos="fade-right" data-aos-delay="100"><a href="#team">Команда</a></li>
+              <li data-aos="fade-right" data-aos-delay="200"><a href="#feedback">Отзывы</a></li>
+              <li data-aos="fade-right" data-aos-delay="300"><a href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <div class="hero__main-content">
@@ -45,9 +45,9 @@
       </section>
       <section class="layout-setter padding" id="about">
         <div class="first-child">
-          <div class="section-title blob" data-aos="fade-up">
+          <div class="section-title blob" data-aos="fade-right">
             О проекте
-            <img src="/assets/images/about-project.svg" alt="" />
+            <img src="/assets/images/about-project.svg" alt="" class="rellax" data-rellax-speed="-3"/>
           </div>
         </div>
         <div class="second-child flex column start g40 lh">
@@ -76,7 +76,7 @@
         </div>
       </section>
       <section class="flex special about">
-        <img src="/assets/images/heart.png" alt="" id="heart" data-aos="fade-up" />
+        <img src="/assets/images/heart.png" alt="" id="heart" class="rellax" data-rellax-speed="-2" />
         <div class="special-content flex column">
           <div class="flex column end start g40">
             <div class="title" data-aos="fade-up">
@@ -134,7 +134,7 @@
                 с психотерапевтом <br />
                 вы сможете получить.
               </p>
-              <img src="/assets/images/bubble.png" alt="" class="bubble" />
+              <img src="/assets/images/bubble.png" alt="" class="bubble rellax" data-rellax-speed="-2" />
             </div>
             <div class="stat flex start column">
               <div class="number" data-aos="fade-up" data-aos-delay="50">47</div>
@@ -175,7 +175,7 @@
         <div class="first-child">
           <div class="section-title blob team" data-aos="fade-up">
             Команда
-            <img src="/assets/images/team-blob.svg" alt="" />
+            <img src="/assets/images/team-blob.svg" class="rellax" data-rellax-speed="-3" alt="" />
           </div>
         </div>
         <div class="second-child flex wrap start g20">
@@ -221,7 +221,7 @@
         <div class="first-child">
           <div class="section-title blob team" data-aos="fade-up">
             Отзывы
-            <img src="/assets/images/feedback.svg" alt="" />
+            <img src="/assets/images/feedback.svg" alt="" class="rellax" data-rellax-speed="-3" />
           </div>
         </div>
         <div class="second-child">
@@ -412,7 +412,7 @@
         <div class="first-child">
           <div class="section-title blob" data-aos="fade-up">
             Контакты
-            <img src="/assets/images/contacts-blob.svg" alt="" />
+            <img src="/assets/images/contacts-blob.svg" alt="" class="rellax" data-rellax-speed="-3" />
           </div>
         </div>
         <div class="second-child flex column start">
@@ -478,15 +478,16 @@
     </main>
     <footer class="dark flex spb noise g20">
         <div class="flex nav spb">
-            <a href="#about" data-aos="fade-up">О проекте</a>
-            <a href="#team" data-aos="fade-up" data-aos-delay="50">Команда</a>
-            <a href="#feedback" data-aos="fade-up" data-aos-delay="100">Отызывы</a>
-            <a href="#contacts" data-aos="fade-up" data-aos-delay="150">Контакты</a>
+            <a href="#about" data-aos="fade-up" data-aos-offset="-10">О проекте</a>
+            <a href="#team" data-aos="fade-up" data-aos-delay="50" data-aos-offset="-10">Команда</a>
+            <a href="#feedback" data-aos="fade-up" data-aos-delay="100" data-aos-offset="-10">Отызывы</a>
+            <a href="#contacts" data-aos="fade-up" data-aos-delay="150" data-aos-offset="-10">Контакты</a>
         </div>
         <a href="#" class="logo" data-aos="fade-up" data-aos-delay="200">Batyl</a>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <script src="/js/index.js"></script>
   </body>
 </html>
