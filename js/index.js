@@ -4,7 +4,9 @@ window.addEventListener("load", () => {
     duration: 1000,
     anchorPlacement: 'bottom-top'
   });
-  var rellax = new Rellax('.rellax');
+  var rellax = new Rellax('.rellax', {
+    breakpoints:[624, 837, 1201]
+  });
 
   const swiper = new Swiper(".swiper", {
     // Optional parameters
