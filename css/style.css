@@ -297,7 +297,7 @@ main {
   min-width: 300px;
 }
 .second-child.lh p {
-  line-height: 2rem;
+  line-height: 204.52%;
 }
 .second-child p {
   max-width: 800px;
@@ -421,8 +421,9 @@ nav ul li a:hover {
   position: relative;
 }
 .blob img {
+  --top: -200px;
   position: absolute;
-  top: -200px;
+  top: var(--top);
   left: -70px;
   width: clamp(100px, 50vw, 540px);
   filter: blur(75px);
@@ -441,7 +442,8 @@ section.special {
 
 img#heart {
   position: absolute;
-  top: -290px;
+  --top: -290px;
+  top: var(--top);
   left: 20px;
   z-index: -1;
   width: clamp(130px, 30vw, 280px);
@@ -527,11 +529,11 @@ img#heart {
 }
 .results .stat .number {
   font-size: var(--fs-700);
-  color: #7D83FF;
+  color: #7d83ff;
   font-family: var(--ff-secondary);
 }
 .results .stat .number.second {
-  color: #FC60FF;
+  color: #fc60ff;
 }
 
 section#team {
@@ -540,7 +542,8 @@ section#team {
 }
 section#team .blob img {
   max-width: 331px;
-  top: -870px;
+  --top: -1070px;
+  top: var(--top);
   left: -40px;
   filter: blur(55px);
 }
@@ -562,9 +565,10 @@ section#feedback {
   padding-right: 0;
 }
 section#feedback .blob img {
+  --top: -1330px;
   filter: blur(110px);
   width: clamp(100px, 20vw, 480px);
-  top: -1130px;
+  top: var(--top);
   left: -98px;
 }
 section#feedback .swiper {
@@ -598,7 +602,7 @@ section#feedback .swiper-button-next {
   transform: translate(50%);
 }
 section#feedback .pagination-number.active {
-  color: #4A52FF !important;
+  color: #4a52ff !important;
 }
 section#feedback .pagination-number:hover {
   color: #7077fd !important;
@@ -610,7 +614,7 @@ section#feedback .pagination-number:hover {
   overflow: hidden;
   border-radius: 30px;
   border: 1px solid var(--clr-dark-700);
-  background: #EFEFFF;
+  background: #efefff;
   padding: 2.8125rem;
   margin-bottom: calc(var(--swiper-navigation-size) + 1.25rem);
 }
@@ -628,12 +632,16 @@ section#feedback .pagination-number:hover {
   justify-content: flex-start;
   padding: 6.25rem 2.5rem;
   width: 100%;
+  overflow: hidden;
 }
 .download .notebook {
   position: relative;
 }
 .download .notebook img:not(.blob) {
   width: clamp(100px, 20vw, 270px);
+  position: relative;
+  --top: -1450px;
+  top: var(--top);
 }
 .download img.blob {
   position: absolute;
@@ -666,19 +674,20 @@ section#feedback .pagination-number:hover {
   padding: 6.25rem 2.5rem;
 }
 .help .phone {
-  color: #E51BC5;
+  color: #e51bc5;
   text-decoration: underline;
   transition: 0.2s ease;
 }
 .help .phone:hover {
-  color: #4A52FF;
+  color: #4a52ff;
 }
 
 section#contacts .blob img {
   max-width: 224px;
   filter: blur(150px);
   left: 10px;
-  top: -1492px;
+  --top: -1792px;
+  top: var(--top);
 }
 section#contacts p {
   margin-bottom: 45px;
@@ -761,6 +770,11 @@ footer .logo {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1600px) {
+  .rellax:not(.bubble):not(#heart) {
+    top: calc(var(--top) + 100px) !important;
+  }
+}
 @media screen and (max-width: 980px) {
   .mq980 {
     display: none;
@@ -769,6 +783,11 @@ footer .logo {
 @media screen and (max-width: 800px) {
   section#feedback {
     padding-right: 2.5rem;
+  }
+}
+@media screen and (max-width: 855px) {
+  .container {
+    padding: 5rem 2.5rem 0;
   }
 }
 @media screen and (max-width: 520px) {
