@@ -650,6 +650,12 @@ footer {
   .container {
     padding: 5rem 2.5rem 0;
   }
+  img#heart {
+    top: -90px;
+  }
+  .results img.bubble {
+    top: -20px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -658,5 +664,17 @@ footer {
     align-items: flex-start;
     justify-content: flex-start;
     gap: 10px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .download .notebook img:not(.blob) {
+    top: -1515px;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .download .notebook img:not(.blob) {
+    top: -1615px;
   }
 }
