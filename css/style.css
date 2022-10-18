@@ -699,6 +699,9 @@ section#contacts p a {
 section#contacts p a:hover {
   color: var(--clr-primary-900);
 }
+section#contacts p span {
+  color: var(--clr-accent-700);
+}
 
 .form .title {
   margin: 1.25rem 0 2.5rem;

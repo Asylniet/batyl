@@ -553,6 +553,9 @@ section#contacts {
       color: var(--clr-primary-900);
     }
   }
+  p span {
+    color: var(--clr-accent-700);
+  }
 }
 
 .form {
