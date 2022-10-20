@@ -447,11 +447,11 @@ section#feedback {
     top: calc(100% - var(--swiper-navigation-size) / 2);
   }
   .swiper-button-prev {
-    left: calc(50% - var(--size) - 10px);
+    left: calc(50% - var(--size));
     transform: translate(-50%);
   }
   .swiper-button-next {
-    right: calc(50% - var(--size) - 10px);
+    right: calc(50% - var(--size));
     transform: translate(50%);
   }
   .pagination-number.active {
@@ -465,12 +465,19 @@ section#feedback {
 .feedback {
   width: clamp(280px, 90%, 670px);
   height: calc(100% - var(--swiper-navigation-size));
-  overflow: hidden;
+  max-height: 480px;
+  justify-content: flex-start;
   border-radius: 30px;
   border: 1px solid var(--clr-dark-700);
   background: #efefff;
   padding: 2.8125rem;
   margin-bottom: calc(var(--swiper-navigation-size) + 1.25rem);
+  .fw-medium {
+    margin-bottom: 45px;
+    max-height: 260px;
+    padding-right: 5px;
+    overflow: auto;
+  }
 }
 
 .avatar {
